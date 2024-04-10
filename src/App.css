@@ -13,26 +13,77 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Karrik";
+  src: url('./karrik/Karrik-Regular.ttf') format("ttf");
+  src: url('./karrik/Karrik-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: "Karrik Italic";
+  src: url('./karrik/Karrik-Italic.ttf') format("ttf");
+  src: url('./karrik/Karrik-Italic.woff') format("woff");
+}
+
+h2 {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
+  color: #242020;
+  font-weight: normal;
+}
+
+.navLink {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
+  color: #242020;
+  align-self: center;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #F72585;
+}
+
+#nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 60px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+#navLeft {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navCenter{
+  width: 33%;
 }
+
+#navLogo {
+  width: 300px;
+}
+
+#navRight {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 80px;
+}
+
+#navSearch {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px; 
+  color: #ADADAD;
+  border: solid 2px #ADADAD;
+  border-radius: 12px;
+  padding: 12px 16px 12px 8px;
+}
+
+#navSearch:focus { 
+  color: #242020;
+}
+
