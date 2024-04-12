@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
 import CardHighlight from './cardHighlight';
 
 import scoreYellow from './images/scoreYellow.png'

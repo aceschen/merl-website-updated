@@ -1,5 +1,9 @@
 import Navbar from '../components/navbar';
 import LatestReviews from '../components/latestReviews';
+import AboutMERL from '../components/aboutMERL';
+import Articles from '../components/articles'
+import Collection from '../components/collection';
+import Footer from '../components/footer';
 import '../App.css';
 
 const Home = () => {
@@ -11,6 +15,10 @@ const Home = () => {
 		  
 			<body>
 				<LatestReviews/>
+				<AboutMERL/>
+				<Articles/>
+				<Collection/>
+				<Footer/>
 			</body>
 		</div>
 	  );
