@@ -3,14 +3,14 @@ import { NavLink } from 'react-router-dom';
 // import logo from './images/logo.png';
 import wandavision from './images/wandavision.png';
 import scoreYellow from './images/scoreYellow.png'
-import '../App.css';
+import '../App.scss';
 
 export default function CardHighlight(props) {
     return (
 		<div className="cardHighlight">
 			<h1>{props.title}</h1>
-			<div className='cardHighlightContent'>
-				<img src={props.imagesrc} alt="" className="cardHighlightImage"></img>
+			<div className='flex-row' id='card-highlight-content'>
+				<img src={props.imagesrc} alt="" id="#card-highlight-image"></img>
 				<div className="cardHighlightScoreText">
 					<img src={props.scoresrc} alt="" className="cardHighlightScore"></img>
 					<p>{props.quote}</p>

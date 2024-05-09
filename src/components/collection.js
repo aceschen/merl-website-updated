@@ -12,20 +12,20 @@ import top from './images/carousel-cards/carousel-topgun.png';
 
 import leftArrow from './images/left.png';
 import rightArrow from './images/right.png';
-import '../App.css';
+import '../App.scss';
 
 export default function Collection() {
     return (
 		<div>
-			<div id="carouselHeader">
-				<div className="sectionHeader">
-					<span class="dotBlue"></span>
+			<div className='flex-row space-between'>
+				<div className="flex-row gap-12">
+					<span class="dot blue"></span>
 					<h1>MERL's Top 10</h1>	
 				</div>
-				<NavLink id="viewCollection" to="/top10">VIEW COLLECTION</NavLink>
+				<NavLink id="view-collection" to="/top10">VIEW COLLECTION</NavLink>
 			</div>
 
-			<div id="carousel">
+			<div className='flex-row space-between align-top'>
 				<img src={leftArrow} alt="" className="carouselArrow"></img>
 				<CardCarousel
 					imgsrc={spi}

@@ -4,7 +4,7 @@ import AboutMERL from '../components/aboutMERL';
 import Articles from '../components/articles'
 import Collection from '../components/collection';
 import Footer from '../components/footer';
-import '../App.css';
+import '../App.scss';
 
 const Home = () => {
     return (

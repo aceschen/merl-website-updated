@@ -1,0 +1,289 @@
+@import url('https://use.typekit.net/zni2vxh.css');
+
+/* ~ Colors and Fonts */
+
+$color-black: #242020;
+$color-gray-primary: #3F3F3F; 
+$color-gray-secondary: #ADADAD;
+$color-white: #FFFFFF;
+$color-pink: #f72585;
+$color-green: #268245;
+$color-blue: #4361EE;
+$color-red: #892B2B;
+
+.pink {
+  background-color: $color-pink;
+}
+.green {
+  background-color: $color-green;
+}
+.blue {
+  background-color: $color-blue;
+}
+.red {
+  background-color: $color-red;
+}
+.black {
+  background-color: $color-black;
+}
+
+.text-gray-primary {
+  color: $color-gray-primary;
+}
+.text-white {
+  color: $color-white;
+}
+.text-red {
+  color: $color-red;
+}
+.text-blue {
+  color: $color-blue;
+}
+
+
+@font-face {
+  font-family: "Karrik";
+  src: url('./karrik/Karrik-Regular.ttf') format("ttf");
+  src: url('./karrik/Karrik-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: "Karrik Italic";
+  src: url('./karrik/Karrik-Italic.ttf') format("ttf");
+  src: url('./karrik/Karrik-Italic.woff') format("woff");
+}
+
+/* ~ General Styles */
+
+.App {
+  text-align: center;
+  margin: 0px 120px;
+}
+
+body {
+  min-width: 1200px;
+}
+
+/* ~ Flexbox and Alignment */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-36 {
+  gap: 36px;
+}
+
+.gap-80 {
+  gap: 80px;
+}
+
+.gap-120 {
+  gap: 120px;
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.align-left {
+  align-items: left;
+  text-align: left;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.rounded-corners {
+  border-radius: 12px;;
+}
+
+/* ~ Margins */
+
+.section-margin {
+  margin-bottom: 120px;
+}
+
+#footer-margin {
+  margin: 120px 160px;
+}
+
+.margin-4 {
+  margin-bottom: 4px;
+}
+
+.margin-bottom-32 {
+  margin-bottom: 32px;
+}
+
+
+/* ~ Typography */
+
+h1 {
+  font-family: "Karrik", sans-serif;
+  font-size: 36px;
+  color: $color-black;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
+  color: $color-black;
+  font-weight: normal;
+}
+
+p {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 20px; 
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+/* ~ NavLinks */
+
+.navLink {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
+  color: $color-black;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: $color-pink;
+}
+
+#view-collection {
+  font-family: 'Karrik', sans-serif;
+  font-size: 24px;
+  color: $color-blue;
+  text-decoration: none;
+}
+
+
+/* ~ Navigation Bar */
+
+#nav {
+  margin: 60px 0px;
+}
+
+.nav-section {
+  display: flex; 
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ~ Cards */
+
+.card-highlight {
+  width: 600px;
+  text-align: left;
+}
+
+.card-highlight-image {
+  width: 187px;
+  height: 282px;
+  border-radius: 12px;
+}
+/* ~ Score */
+
+.score {
+  height: 78px;
+}
+
+.score-container {
+  position: absolute;
+  height: 78px;
+  width: 330px;
+  border: 2px solid $color-black;
+  border-radius: 12px;
+}
+
+.score-progress {
+  position: absolute; 
+  height: 80px; 
+  border-radius: 12px 0 0 12px;
+}
+
+.score-value {
+  position: absolute;
+  font-family: "roc-grotesk", sans-serif;
+  font-size: 64px;
+  z-index: 1;
+  margin: 10px 0 0 12px;
+}
+
+/* ~ Inputs */
+
+.text-input {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px; 
+  color: $color-gray-secondary;
+  border: solid 2px $color-gray-secondary;
+  border-radius: 12px;
+  padding: 12px 16px 12px 8px;
+  justify-self: center;
+  width: 240px;
+}
+
+.text-input:focus {
+  color: $color-black;
+}
+
+#email-input {
+  width: 460px;
+}
+
+/*~ Buttons and Dots */
+
+.button {
+  font-family: 'Karrik', sans-serif;
+  font-size: 20px;
+  color: $color-white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+}
+
+.button:hover {
+  cursor:pointer; 
+}
+
+.dot {
+  height: 24px; 
+  width: 24px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ~ Carousel */
+
+#card-carousel {
+  width: 200px;
+}
+
+.carouselArrow {
+  width: 48px;
+  position: relative; 
+  top: 100px;
+}
+

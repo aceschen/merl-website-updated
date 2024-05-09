@@ -1,32 +1,34 @@
 import { NavLink } from 'react-router-dom';
-import '../App.css';
+import '../App.scss';
 
 export default function Articles() {
     return (
 		<div>
-			<div className="sectionHeader">
-				<span class="dotGreen"></span>
+			<div className="flex-row gap-12">
+				<span class="dot green"></span>
 				<h1>Articles</h1>		
 			</div>	
-			<div>
-				<h1 className='articlePreviewTitle'>ReFrame Report on Gender & Hiring in TV 2023</h1>
-				<p className='articlePreviewSubtitle'>Subtitle with more information</p>
+			<div className='align-left'>
+				<div>
+					<h1 className='margin-4'>ReFrame Report on Gender & Hiring in TV 2023</h1>
+					<p className='text-gray-primary margin-bottom-32 italic'>Subtitle with more information</p>
+				</div>
+				<div>
+					<h1 className='margin-4'>Luminate’s 2023 Entertainment Diversity Progress Report</h1>
+					<p className='text-gray-primary margin-bottom-32 italic'>Subtitle with more information</p>
+				</div>
+				<div>
+					<h1 className='margin-4'>Your Balanced Media Diet and Dark Matters</h1>
+					<p className='text-gray-primary margin-bottom-32 italic'>Subtitle with more information</p>
+				</div>
 			</div>
-			<div>
-				<h1 className='articlePreviewTitle'>Luminate’s 2023 Entertainment Diversity Progress Report</h1>
-				<p className='articlePreviewSubtitle'>Subtitle with more information</p>
-			</div>
-			<div>
-				<h1 className='articlePreviewTitle'>Your Balanced Media Diet and Dark Matters</h1>
-				<p className='articlePreviewSubtitle'>Subtitle with more information</p>
-			</div>
-			<div id="subscribeToNewsletter">
-				<div className="sectionHeader">
-					<span class="dotGreen"></span>
+			<div className='flex-row section-margin gap-36'>
+				<div className="flex-row gap-12">
+					<span class="dot green"></span>
 					<h2>Like what you see? Subscribe to our newsletter!</h2>
 				</div>	
-				<input type="text" placeholder="Email Address" id="emailInput"></input>
-				<button id="subscribeButton">Subscribe</button>
+				<input type="text" placeholder="Email Address" className='text-input' id="email-input"></input>
+				<button className='button green' id='#button-subscribe'>Subscribe</button>
 			</div>
 		</div>
     )
