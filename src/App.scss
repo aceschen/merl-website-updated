@@ -57,12 +57,10 @@ $color-red: #892B2B;
 
 .App {
   text-align: center;
-  margin: 0px 120px;
+  margin: 0px auto;
+  max-width: 1100px;
 }
 
-body {
-  min-width: 1200px;
-}
 
 /* ~ Flexbox and Alignment */
 
@@ -133,21 +131,21 @@ body {
 
 h1 {
   font-family: "Karrik", sans-serif;
-  font-size: 36px;
+  font-size: 1.5em;
   color: $color-black;
   font-weight: normal;
 }
 
 h2 {
   font-family: "Karrik", sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
   color: $color-black;
   font-weight: normal;
 }
 
 p {
   font-family: "ff-real-text-pro", sans-serif;
-  font-size: 20px; 
+  font-size: 1em; 
   font-weight: 300;
   line-height: 150%;
   margin: 0px;
@@ -162,7 +160,7 @@ p {
 
 .navLink {
   font-family: "Karrik", sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
   color: $color-black;
   text-decoration: none;
 }
@@ -173,7 +171,7 @@ p {
 
 #view-collection {
   font-family: 'Karrik', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   color: $color-blue;
   text-decoration: none;
 }
@@ -207,27 +205,28 @@ p {
 /* ~ Score */
 
 .score {
-  height: 78px;
+  height: 52px;
+  width: 250px;
 }
 
 .score-container {
   position: absolute;
-  height: 78px;
-  width: 330px;
+  height: 48px;
+  width: inherit;
   border: 2px solid $color-black;
   border-radius: 12px;
 }
 
 .score-progress {
   position: absolute; 
-  height: 80px; 
+  height: 50px; 
   border-radius: 12px 0 0 12px;
 }
 
 .score-value {
   position: absolute;
   font-family: "roc-grotesk", sans-serif;
-  font-size: 64px;
+  font-size: 2em;
   z-index: 1;
   margin: 10px 0 0 12px;
 }
