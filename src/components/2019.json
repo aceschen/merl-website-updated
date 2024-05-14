@@ -1281,5 +1281,23 @@
         "receptionTaggingSources": "https://www.nytimes.com/2019/06/11/arts/television/linda-fairstein-when-they-see-us.html, https://muse.jhu.edu/article/730381/pdf, https://www.forbes.com/sites/danafeldman/2019/06/19/ava-duvernay-on-when-they-see-us-what-kind-of-people-are-we-if-we-turn-our-eyes-to-this/?sh=875be1e63427, https://www.oprahdaily.com/entertainment/tv-movies/a27757881/isis-king-when-they-see-us-facts/, https://www.rogerebert.com/reviews/when-they-see-us-2019",
         "howMuchOfThisMediaHaveYouConsumed": 5,
         "emailAddress": "ellebobb@berkeley.edu"
-    }
+    },
+	{
+		"media-id": "1",
+		"name": "WandaVision",
+		"merl-score": 24, 
+		"percentile": 54, 
+		"crow-type": "./images/birdSideeye.png", 
+		"poster-src": "https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_FMjpg_UX1000_.jpg",
+		"text-preview": "WandaVision isn't particularly offensive when it comes to diversity on screen, but it's not good either."
+	},
+	{
+		"media-id": "2",
+		"name": "Spider-Man: Into the Spider-Verse",
+		"merl-score": 65, 
+		"percentile": 80, 
+		"crow-type": "./images/birdSideeye.png", 
+		"poster-src": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_FMjpg_UX1000_.jpg",
+		"text-preview": "Addressing topics of family, Afro-Latino culture, and women mentorship all across the multiverse..."
+	}
 ]
