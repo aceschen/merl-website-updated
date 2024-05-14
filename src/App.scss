@@ -4,7 +4,7 @@
 
 $color-black: #242020;
 $color-gray-primary: #3F3F3F; 
-$color-gray-secondary: #ADADAD;
+$color-gray-secondary: #969696;
 $color-white: #FFFFFF;
 $color-pink: #f72585;
 $color-green: #268245;
@@ -29,6 +29,9 @@ $color-red: #892B2B;
 
 .text-gray-primary {
   color: $color-gray-primary;
+}
+.text-gray-secondary {
+  color: $color-gray-secondary
 }
 .text-white {
   color: $color-white;
@@ -176,6 +179,12 @@ p {
   font-size: 24px;
   color: $color-blue;
   text-decoration: none;
+}
+
+.reviewer {
+  font-family: "ff-real-text-pro", sans-serif;
+  color: $color-blue;
+  font-weight: 400;
 }
 
 

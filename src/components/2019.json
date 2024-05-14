@@ -1,9 +1,20 @@
-{
-	"media-id": "12345678",
-	"property-name": "WandaVision",
-	"merl-score": 24, 
-	"percentile": 54, 
-	"crow-type": "./images/birdSideeye.png", 
-	"poster-src": "https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_FMjpg_UX1000_.jpg",
-	"text-preview": "WandaVision isn't particularly offensive when it comes to diversity on screen, but it's not good either."
-}
+[
+	{
+		"media-id": "1",
+		"name": "WandaVision",
+		"merl-score": 24, 
+		"percentile": 54, 
+		"crow-type": "./images/birdSideeye.png", 
+		"poster-src": "https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_FMjpg_UX1000_.jpg",
+		"text-preview": "WandaVision isn't particularly offensive when it comes to diversity on screen, but it's not good either."
+	},
+	{
+		"media-id": "2",
+		"name": "Spider-Man: Into the Spider-Verse",
+		"merl-score": 65, 
+		"percentile": 80, 
+		"crow-type": "./images/birdSideeye.png", 
+		"poster-src": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_FMjpg_UX1000_.jpg",
+		"text-preview": "Addressing topics of family, Afro-Latino culture, and women mentorship all across the multiverse..."
+	}
+]
