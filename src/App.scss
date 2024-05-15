@@ -241,11 +241,13 @@ details:hover {
   width: 187px;
   height: 282px;
   border-radius: 12px;
+  border: 2px solid $color-black;
 }
 
 .card-image {
   width: 120px;
   border-radius: 12px;
+  border: 2px solid $color-black;
 }
 
 .card-title {
@@ -303,7 +305,7 @@ details:hover {
 }
 
 #email-input {
-  width: 460px;
+  width: 400px;
 }
 
 .search-page-input {

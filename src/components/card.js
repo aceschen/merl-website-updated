@@ -38,7 +38,7 @@ export default function Card(props) {
 					<div className='score-value'>{props.score}</div>
 				</div>
 				<p>"{props.text}"</p>
-				<NavLink className={"navLink reviewer"} to={props.reviewer}>Read the review</NavLink>
+				<NavLink className={"navLink reviewer"} to={"/wandavision"}>Read the review</NavLink>
 			</div>
 		</div>				
 		</div>

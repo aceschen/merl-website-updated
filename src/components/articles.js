@@ -25,7 +25,7 @@ export default function Articles() {
 			<div className='flex-row section-margin gap-36'>
 				<div className="flex-row gap-12">
 					<span class="dot green"></span>
-					<h2>Like what you see? Subscribe to our newsletter!</h2>
+					<h2 className='align-left'>Like what you see? Subscribe to our newsletter!</h2>
 				</div>	
 				<input type="text" placeholder="Email Address" className='text-input' id="email-input"></input>
 				<button className='button green' id='#button-subscribe'>Subscribe</button>

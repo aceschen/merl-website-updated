@@ -5,6 +5,7 @@ import '../App.scss';
 
 import jsonData from '../data/2019.json';
 import scores from '../data/2019-blurbs.json';
+import posters from '../data/imdb-posters.json';
 
 export default function Search(props) {
 
@@ -29,7 +30,7 @@ export default function Search(props) {
 	// [{title: "wanda", "score": x, "percentile": y}, {...}]
 	var cardData = []
 	titles.forEach(function(title) {
-		cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title]})
+		cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title], "poster": posters[title]})
 	})
 	console.log("cardData", cardData);
 
@@ -51,7 +52,7 @@ export default function Search(props) {
 				{cardData.map((item => (
 					<Card
 						title={item["title"]}
-						poster="https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_.jpg"
+						poster={item["poster"]}
 						score={item["score"]}
 						percentile={item["percentile"]}
 						text="150 character blurb here!!"
