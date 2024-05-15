@@ -17,7 +17,7 @@ export default function latestReviews(props) {
 		const items = jsonData["items"];
 		items.map((item) => (titles.add(item["propertyNameOriginal"])
 			));
-		// console.log(titles);
+		// console.log(titles);`	
 
 		titles.forEach(function(title) {
 			//saves title and overall MERL score to scores2019
@@ -31,7 +31,9 @@ export default function latestReviews(props) {
 		// [{title: "wanda", "score": x, "percentile": y}, {...}]
 		var cardData = []
 		titles.forEach(function(title) {
-			cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title]})
+			if (title == "Aladdin" || title == "Joker") {
+				cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title]})
+			}
 		})
 		console.log("cardData", cardData);
 

@@ -30,7 +30,7 @@ export default function CardWV(props) {
 						<div className='score-value'>{props.score}</div>
 					</div>
 					<p>"{props.text}"</p>
-					<NavLink className={"navLink"} to={props.link}>Read the review &gt;</NavLink>
+					<NavLink className={"navLink"} to={"/wandavision"}>Read the review</NavLink>
 				</div>
 			</div>				
 		</div>

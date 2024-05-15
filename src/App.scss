@@ -82,6 +82,11 @@ $color-red: #892B2B;
   flex-direction: column;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gap-12 {
   gap: 12px;
 }
@@ -245,6 +250,10 @@ details:hover {
 
 .card-title {
   margin: 0;
+}
+
+.card {
+  width: 520px;
 }
 
 /* ~ Score */

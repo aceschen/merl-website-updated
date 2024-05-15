@@ -12,7 +12,7 @@ export default function Navbar() {
 				<NavLink className={"navLink"} to="/">Rating System</NavLink>
 			</div>
 			<div className='nav-section flex-col'>
-				<img src={logo} alt="MERL Logo" id="navLogo" width={300}></img>
+				<a href="/"><img src={logo} alt="MERL Logo" id="navLogo" width={300}></img></a>
 				<h2>Diversity scores for film and TV</h2>
 				
 			</div>
