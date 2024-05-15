@@ -25,7 +25,7 @@ export default function CardWV(props) {
 				<img src={props.poster} alt="" className="card-highlight-image"></img>
 				<div className="flex-col gap-12 gray-primary-text">
 					<div className='score'>
-						<div className='score-progress green'style={{width:252*props.percentile/100}}></div>
+						<div className='score-progress green'style={{width:250*props.percentile/100}}></div>
 						<div className='score-container'></div>
 						<div className='score-value'>{props.score}</div>
 					</div>
