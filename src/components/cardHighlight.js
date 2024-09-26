@@ -40,7 +40,7 @@ export default function CardWV(props) {
 					</div>
 				</div>
 				<p>"{props.text}"</p>
-				<a href={"/wandavision"}><button className="buttonRead pink" to={"/wandavision"}>Read the review and score &gt;</button></a>
+				<a href={"/wandavision"}><button className="button pink" to={"/wandavision"}>Read the review and score &gt;</button></a>
 				
 
 			</div>

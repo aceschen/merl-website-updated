@@ -3,7 +3,7 @@
 /* ~ Colors and Fonts */
 
 $color-black: #242020;
-$color-gray-primary: #3F3F3F; 
+$color-gray-primary: #353535; 
 $color-gray-secondary: #969696;
 $color-gray-margin: #F3E7ED;
 $color-white: #FFFFFF;
@@ -31,6 +31,9 @@ $color-red: #892B2B;
 }
 .yellow {
   background-color: $color-yellow;
+}
+.gray-primary {
+  background-color: $color-gray-primary;
 }
 
 .text-gray-primary {
@@ -94,6 +97,10 @@ $color-red: #892B2B;
   gap: 12px;
 }
 
+.gap-24 {
+  gap: 24px;
+}
+
 .gap-36 {
   gap: 36px;
 }
@@ -149,10 +156,11 @@ $color-red: #892B2B;
 /* ~ Typography */
 
 h1 {
-  font-family: "Karrik", sans-serif;
-  font-size: 1.5em;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
   color: $color-black;
-  font-weight: normal;
   margin: 0;
 }
 
@@ -428,7 +436,7 @@ details:hover {
   padding: 48px;
 }
 
-.buttonRead {
+.button {
   // font-family: 'Karrik', sans-serif;
   font-family: "ff-real-text-pro", sans-serif;
   font-size: 16px;
@@ -436,9 +444,17 @@ details:hover {
   width: fit-content;
   padding: 12px 16px;
   border: none;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .buttonRead:hover {
   cursor: pointer;
+}
+
+#aboutMERL {
+  padding: 36px 48px;
+}
+
+#aboutCallout {
+  font-size: 46px;
 }
