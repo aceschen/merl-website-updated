@@ -40,12 +40,8 @@ export default function latestReviews(props) {
 		console.log("cardData", cardData);
 
 	    return (
-			<div >
-				<div className="flex-row gap-12">
-					<span class="dot blue"></span>
-					<h1>Latest Reviews</h1>
-				</div>
-				<div className='flex-row gap-120 section-margin'>
+			<div id='latestReviews'>
+				<div className='flex-row'>
 					{cardData.map((item => (
 					<CardHighlight
 						title={item["title"]}

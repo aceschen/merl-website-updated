@@ -1,4 +1,4 @@
-@import url('https://use.typekit.net/zni2vxh.css');
+@import url('https://use.typekit.net/bbj4vjx.css');
 
 /* ~ Colors and Fonts */
 
@@ -68,7 +68,7 @@ $color-red: #892B2B;
   text-align: center;
   margin: 0px auto;
   max-width: 1100px;
-  // background-color: $color-gray-margin;
+  background-color: $color-white;
 }
 
 
@@ -153,6 +153,7 @@ h1 {
   font-size: 1.5em;
   color: $color-black;
   font-weight: normal;
+  margin: 0;
 }
 
 h2 {
@@ -246,7 +247,24 @@ details:hover {
 /* ~ Navigation Bar */
 
 #nav {
-  margin: 60px 0px;
+  padding: 24px 100px;
+  // gap: 36px;
+}
+
+#navLogo {
+  width: 258px;
+}
+
+#nav-search {
+  width: 556px;
+  font-family: "Karrik", sans-serif;
+  font-size: 20px; 
+  color: $color-black;
+  border: solid 2px $color-pink;
+  background-color: $color-gray-margin;
+  border-radius: 24px;
+  padding: 12px 0 12px 24px;
+  justify-self: center;
 }
 
 .nav-section {
@@ -264,10 +282,9 @@ details:hover {
 }
 
 .card-highlight-image {
-  width: 187px;
-  height: 282px;
-  border-radius: 12px;
-  border: 2px solid $color-black;
+  width: 137px;
+  border-radius: 6px;
+  // border: 2px solid $color-black;
 }
 
 .card-image {
@@ -285,6 +302,22 @@ details:hover {
 }
 
 /* ~ Score */
+
+#scoreGreen {
+  width: 178px;
+}
+
+.scoreValue {
+  position: absolute;
+  display: flex;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  text-align: center;
+  font-family: "Karrik", sans-serif;
+  font-size: 40px; 
+  color: $color-white;
+  margin: -98px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
 
 .score {
   height: 52px;
@@ -388,3 +421,24 @@ details:hover {
   top: 100px;
 }
 
+// new stuff .. sort and clean later ..... sorry future ace ... 
+
+#latestReviews {
+  background-color: $color-white;
+  padding: 48px;
+}
+
+.buttonRead {
+  // font-family: 'Karrik', sans-serif;
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 16px;
+  color: $color-white;
+  width: fit-content;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+}
+
+.buttonRead:hover {
+  cursor: pointer;
+}
