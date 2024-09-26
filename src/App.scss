@@ -5,8 +5,10 @@
 $color-black: #242020;
 $color-gray-primary: #3F3F3F; 
 $color-gray-secondary: #969696;
+$color-gray-margin: #F3E7ED;
 $color-white: #FFFFFF;
 $color-pink: #f72585;
+$color-pink-secondary: #FFCAE3;
 $color-green: #268245;
 $color-blue: #4361EE;
 $color-yellow: #FAB34A;
@@ -66,6 +68,7 @@ $color-red: #892B2B;
   text-align: center;
   margin: 0px auto;
   max-width: 1100px;
+  // background-color: $color-gray-margin;
 }
 
 
@@ -191,15 +194,38 @@ details:hover {
 
 /* ~ NavLinks */
 
-.navLink {
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  background-color: $color-pink;
+  flex: 1;
   font-family: "Karrik", sans-serif;
-  font-size: 1.25em;
-  color: $color-black;
+  text-decoration: none;
+  height: 48px;
+}
+
+.navItem a {
+  color: $color-white;
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
   text-decoration: none;
 }
 
-.navLink:hover {
-  color: $color-pink;
+.navLink {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background-color: $color-pink-secondary;
+  color: $color-black;
+}
+
+.navItem:hover a {
+  color: $color-black;
 }
 
 #view-collection {
