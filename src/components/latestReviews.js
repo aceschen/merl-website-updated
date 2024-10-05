@@ -40,8 +40,8 @@ export default function latestReviews(props) {
 		console.log("cardData", cardData);
 
 	    return (
-			<div id='latestReviews'>
-				<div className='flex-row'>
+			<div className='section-header white'>
+				<div className='flex-row margin-bottom-24'>
 					{cardData.map((item => (
 					<CardHighlight
 						title={item["title"]}

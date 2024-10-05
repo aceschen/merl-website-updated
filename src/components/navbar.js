@@ -18,6 +18,7 @@ export default function Navbar() {
 		</div>
 		<div className='flex-row'>
 			<div className='nav-section'>
+				{/* TODO: these should probably just be buttons */}
 				<div className='navItem'>
 					<NavLink to="/search">Reviews</NavLink>
 				</div>

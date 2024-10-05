@@ -9,7 +9,7 @@ $color-gray-margin: #F3E7ED;
 $color-white: #FFFFFF;
 $color-pink: #f72585;
 $color-pink-secondary: #FFCAE3;
-$color-green: #268245;
+$color-green: #329554;
 $color-blue: #4361EE;
 $color-yellow: #FAB34A;
 $color-red: #892B2B;
@@ -35,6 +35,9 @@ $color-red: #892B2B;
 .gray-primary {
   background-color: $color-gray-primary;
 }
+.white {
+  background-color: $color-white;
+}
 
 .text-gray-primary {
   color: $color-gray-primary;
@@ -45,11 +48,9 @@ $color-red: #892B2B;
 .text-white {
   color: $color-white;
 }
-.text-red {
-  color: $color-red;
-}
-.text-blue {
-  color: $color-blue;
+
+.text-pink {
+  color: $color-pink;
 }
 
 
@@ -91,6 +92,10 @@ $color-red: #892B2B;
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+.gap-8 {
+  gap: 8px;
 }
 
 .gap-12 {
@@ -140,16 +145,12 @@ $color-red: #892B2B;
   margin-bottom: 120px;
 }
 
-#footer-margin {
-  margin: 120px 160px;
-}
-
 .margin-4 {
   margin-bottom: 4px;
 }
 
-.margin-bottom-32 {
-  margin-bottom: 32px;
+.margin-bottom-24 {
+  margin-bottom: 24px;
 }
 
 
@@ -356,23 +357,20 @@ details:hover {
 
 /* ~ Inputs */
 
-.text-input {
-  font-family: "Karrik", sans-serif;
-  font-size: 20px; 
-  color: $color-gray-secondary;
-  border: solid 2px $color-gray-secondary;
-  border-radius: 12px;
-  padding: 12px 16px 12px 8px;
-  justify-self: center;
-  width: 240px;
-}
 
 .text-input:focus {
   color: $color-black;
 }
 
-#email-input {
-  width: 400px;
+.email-input {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 300;
+  font-size: 16px; 
+  color: $color-black;
+  border: solid 2px $color-gray-secondary;
+  border-radius: 24px;
+  padding: 12px 0 12px 24px;
+  justify-self: center;
 }
 
 .search-page-input {
@@ -429,6 +427,33 @@ details:hover {
   top: 100px;
 }
 
+/* ~ Articles */
+
+.collection {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0px 48px;
+  background-color: $color-white;
+  // gap: 
+}
+
+.collection div {
+  width: 477px;
+}
+
+.collection h1 {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.collection p {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
 // new stuff .. sort and clean later ..... sorry future ace ... 
 
 #latestReviews {
@@ -451,10 +476,35 @@ details:hover {
   cursor: pointer;
 }
 
-#aboutMERL {
-  padding: 36px 48px;
+.section-header {
+  padding: 48px 48px 24px 48px;
 }
 
 #aboutCallout {
   font-size: 46px;
+}
+
+#subscribe {
+  padding: 24px 48px;
+}
+
+/* ~ Footer */
+
+#footer {
+  padding: 48px;
+}
+
+#footer h2 {
+  font-family: "roc-grotesk", sans-serif; 
+  font-size: 20px;
+  font-weight: 600;
+  margin: 4px 0;
+  // color: $color-pink;
+}
+
+#footer a {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 16px;
+  color: $color-gray-primary;
+  text-decoration: none;
 }
