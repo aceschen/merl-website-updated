@@ -15,10 +15,10 @@ const Home = () => {
 			</header>
 		  
 			<body>
-				<LatestReviews/>
 				<AboutMERL/>
-				<Articles/>
+				<LatestReviews/>
 				<Collections/>
+				{/* <Articles/> */}
 				
 				<Footer/>
 			</body>

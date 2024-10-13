@@ -32,7 +32,7 @@ export default function Navbar() {
 					<NavLink to="/">TSB System</NavLink>
 				</div>
 				<div className='navItem'>
-					<NavLink to="/">For Education</NavLink>
+					<NavLink to="/">For Educators</NavLink>
 				</div>
 				<div className='navItem'>
 					<NavLink to="/">Sign In</NavLink>

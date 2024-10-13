@@ -139,20 +139,6 @@ $color-red: #892B2B;
   border-radius: 12px;
 }
 
-/* ~ Margins */
-
-.section-margin {
-  margin-bottom: 120px;
-}
-
-.margin-4 {
-  margin-bottom: 4px;
-}
-
-.margin-bottom-24 {
-  margin-bottom: 24px;
-}
-
 
 /* ~ Typography */
 
@@ -286,12 +272,13 @@ details:hover {
 /* ~ Cards */
 
 .card-highlight {
-  width: 600px;
   text-align: left;
+  width: 468px;
+  // flex: 1 0 40%;
 }
 
 .card-highlight-image {
-  width: 137px;
+  width:137px;
   border-radius: 6px;
   // border: 2px solid $color-black;
 }
@@ -435,31 +422,27 @@ details:hover {
   gap: 24px;
   padding: 0px 48px;
   background-color: $color-white;
+  
   // gap: 
 }
 
-.collection div {
+#articles div {
   width: 477px;
 }
 
-.collection h1 {
+#articles h1 {
   font-family: "ff-real-text-pro", sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
 
-.collection p {
+#articles p {
   font-family: "ff-real-text-pro", sans-serif;
   font-weight: 200;
   font-size: 16px;
 }
 
 // new stuff .. sort and clean later ..... sorry future ace ... 
-
-#latestReviews {
-  background-color: $color-white;
-  padding: 48px;
-}
 
 .button {
   // font-family: 'Karrik', sans-serif;
@@ -477,7 +460,7 @@ details:hover {
 }
 
 .section-header {
-  padding: 48px 48px 24px 48px;
+  padding: 48px;
 }
 
 #aboutCallout {

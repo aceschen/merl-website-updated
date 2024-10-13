@@ -32,7 +32,7 @@ export default function latestReviews(props) {
 		// [{title: "wanda", "score": x, "percentile": y}, {...}]
 		var cardData = []
 		titles.forEach(function(title) {
-			if (title == "Aladdin" || title == "Joker") {
+			if (title == "Aladdin" || title == "Joker" || title == "Chernobyl" || title == "Fleabag") {
 				cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title], 
 				"poster": posters[title]})
 			}
@@ -40,40 +40,27 @@ export default function latestReviews(props) {
 		console.log("cardData", cardData);
 
 	    return (
-			<div className='section-header white'>
-				<div className='flex-row margin-bottom-24'>
-					{cardData.map((item => (
-					<CardHighlight
-						title={item["title"]}
-						poster={item["poster"]}
-						score={item["score"]}
-						percentile={item["percentile"]}
-						text="150 character blurb here!!"
-					/>
-					)))}
-
-
-					{/* NOTE: manually filled cards just so it renders nicely for now */}
-					{/*<CardHighlight
-						title="WandaVision"
-						poster="https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_.jpg"
-						score='24'
-						percentile='54'
-						text="WandaVision isn't particularly offensive when it comes to diversity on screen, but it's not good either."
-					/>
-					<CardHighlight 
-						title="Spider-Man: Into the Spider-Verse"
-						score="65"
-						percentile="80" 
-						poster="https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_FMjpg_UX1000_.jpg"
-						text="Addressing topics of family, Afro-Latino culture, and women mentorship all across the multiverse..."
-					/> */}		
+			<div className='white'>
+				<div className="align-left section-header">
+					<h1>Latest Reviews</h1>
 				</div>
-
+				<div className='align-left collection'>
+					{cardData.map((item => (
+						<CardHighlight
+							title={item["title"]}
+							poster={item["poster"]}
+							score={item["score"]}
+							percentile={item["percentile"]}
+							text="150 character blurb here!!"
+						/>
+						)))}
+				</div>
 
 			</div>
 	    );
 	}
+
+	
 
 function calculateScores(items, title) {
 	/*

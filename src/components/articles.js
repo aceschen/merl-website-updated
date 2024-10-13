@@ -7,7 +7,7 @@ export default function Articles() {
 			<div className="align-left section-header white">
 				<h1>Articles</h1>		
 			</div>	
-			<div className='align-left collection'>
+			<div className='align-left collection' id='articles'>
 				<div>
 					<h1 className='margin-4'>ReFrame Report on Gender & Hiring in TV 2023</h1>
 					<p className='text-gray-primary'>According to the ReFrame Report on Gender & Hiring in TV, 108 (54 percent) of the top 200 scripted series...</p>
