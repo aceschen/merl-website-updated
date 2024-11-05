@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import '../App.scss';
-import topstudios from './images/topstudios.png'
+import '../../App.scss';
+import topstudios from '../images/topstudios.png'
 
 
 export default function TopStudios() {

@@ -1,6 +1,6 @@
-import birds from './images/birds.png'
+import birds from '../images/birds.png'
 import { NavLink } from 'react-router-dom';
-import '../App.scss';
+import '../../App.scss';
 
 export default function aboutMERL() {
     return (

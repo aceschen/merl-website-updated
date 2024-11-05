@@ -3,9 +3,11 @@ import CardCarousel from '../components/cardCarousel';
 import Footer from '../components/footer';
 import quantchart from '../components/images/quant-chart.png';
 import qualchart from '../components/images/qual-chart.png';
+import AtAGlance from '../components/indvtext/atAGlance'
 import '../App.scss';
 import { NavLink } from 'react-router-dom';
 import Collection from '../components/collection';
+
 
 const Wandavision = () => {
     return (
@@ -15,6 +17,10 @@ const Wandavision = () => {
 			</header>
 		  
 			<body>
+				<AtAGlance/>
+
+
+				{/* OLD VER */}
 				<div className='flex-col gap-64'>
 
 				<div>

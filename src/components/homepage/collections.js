@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import '../App.scss';
-import merltop10 from './images/merl-top-10.png'
-import classof2020 from './images/class-of-2020.png'
+import '../../App.scss';
+import merltop10 from '../images/merl-top-10.png'
+import classof2020 from '../images/class-of-2020.png'
 
 
 export default function Collections() {

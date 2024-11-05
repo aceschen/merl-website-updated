@@ -1,14 +1,10 @@
-import CardHighlight from './cardHighlight';
+import CardHighlight from '../cardHighlight';
 
-import scoreYellow from './images/scoreYellow.png'
-import scoreGreen from './images/scoreGreen.png'
-import wandavision from './images/wandavision.png'
-import spiderverse from './images/spiderverse.png'
-import '../App.scss';
+import '../../App.scss';
 
-import jsonData from '../data/2019.json';
-import scores from '../data/2019-blurbs.json';
-import posters from '../data/imdb-posters.json';
+import jsonData from '../../data/2019.json';
+import scores from '../../data/2019-blurbs.json';
+import posters from '../../data/imdb-posters.json';
 
 
 export default function latestReviews(props) {

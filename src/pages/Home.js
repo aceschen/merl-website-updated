@@ -1,9 +1,9 @@
 import Navbar from '../components/navbar';
-import TopStudios from '../components/topStudios';
-import LatestReviews from '../components/latestReviews';
-import AboutMERL from '../components/aboutMERL';
-import Articles from '../components/articles'
-import Collections from '../components/collections';
+import TopStudios from '../components/homepage/topStudios';
+import LatestReviews from '../components/homepage/latestReviews';
+import AboutMERL from '../components/homepage/aboutMERL';
+import Articles from '../components/homepage/articles'
+import Collections from '../components/homepage/collections';
 import Footer from '../components/footer';
 import { NavLink } from 'react-router-dom';
 import '../App.scss';
