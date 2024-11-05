@@ -10,7 +10,7 @@ export default function Collections() {
 			<div className="align-left section-header white">
 				<h1>Browse Collections</h1>		
 			</div>	
-			<div className='align-left collection'>
+			<div className='align-left collection gap-24'>
 				<div className='flex-col gap-8'>
 					<img src={merltop10} alt="" width={477} className='margin-4'></img>
 					<h1>MERL Top 10</h1>

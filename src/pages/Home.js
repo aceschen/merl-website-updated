@@ -1,4 +1,5 @@
 import Navbar from '../components/navbar';
+import TopStudios from '../components/topStudios';
 import LatestReviews from '../components/latestReviews';
 import AboutMERL from '../components/aboutMERL';
 import Articles from '../components/articles'
@@ -15,6 +16,7 @@ const Home = () => {
 			</header>
 		  
 			<body>
+				<TopStudios/>
 				<AboutMERL/>
 				<LatestReviews/>
 				<Collections/>
