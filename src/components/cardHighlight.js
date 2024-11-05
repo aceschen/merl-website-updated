@@ -54,9 +54,9 @@ function calculateColor(score) {
 	// returns the bird type 
 	if (score >= 50) {
 		return ['score-green']
-	} else if (score >= 40) {
+	} else if (score >= 43) {
 		return 'score-yellow'
-	} else if (score >= 30) {
+	} else if (score >= 36) {
 		return 'score-orange'
 	} else {
 		return 'score-red'
