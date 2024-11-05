@@ -5,7 +5,7 @@ import topstudios from '../images/topstudios.png'
 import wv from '../images/wandavision.png'
 import scoreGreen from '../images/score-green.png'
 
-export default function TopStudios() {
+export default function AtAGlance() {
     return (
 		<div className='align-left section-header white'>
 				<div className="flex-col">
@@ -22,8 +22,8 @@ export default function TopStudios() {
 								<div className='scoreValue'>58</div>
 							</div>
 							<div>
-								<h3>Characters and Cast: Score 24</h3>
-								<h3>Bias and Reception: Score 34</h3>
+								<h3 className='italic'>Characters and Cast: Score 24</h3>
+								<h3 className='italic'>Bias and Reception: Score 34</h3>
 							</div>
 
 						</div>
@@ -43,8 +43,6 @@ export default function TopStudios() {
 					</div>
 
 				</div>
-
-				<div></div>
 		</div>
     )
 

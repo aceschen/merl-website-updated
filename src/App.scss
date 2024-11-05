@@ -165,9 +165,8 @@ h2 {
 h3 {
   font-family: "ff-real-text-pro", sans-serif; 
   font-size: 1.25em; 
-  color: $color-gray-secondary; 
+  color: $color-gray-primary; 
   font-weight: 400;
-  font-style: italic;
   
 }
 
@@ -177,7 +176,7 @@ p {
   font-weight: 300;
   line-height: 150%;
   margin: 0px;
-  display: inline;
+  display: inline-block;
 }
 
 .italic {
@@ -200,7 +199,21 @@ details:hover {
   cursor: pointer;
 }
 
+canvas {
+  width: 468px !important;
+  height: 468px !important;
+}
 
+spoiler {
+  color: $color-gray-margin;
+  background-color: $color-gray-margin;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+spoiler:hover {
+  color: $color-black;
+}
 
 /* ~ NavLinks */
 
@@ -495,6 +508,32 @@ details:hover {
 
 #subscribe {
   padding: 24px 48px;
+}
+
+.indvtext-lists li {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 12px;
+  color: $color-gray-primary;
+  list-style-type: '•';
+}
+
+.pos-reception {
+  list-style-type: '+' !important;
+}
+
+.neg-reception {
+  list-style-type: '-' !important;
+}
+
+.indvtext-lists actor {
+  color: $color-gray-secondary;
+  font-style: italic;
+}
+
+.reviews a {
+  color: $color-pink;
 }
 
 /* ~ Footer */
