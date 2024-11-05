@@ -1,9 +1,4 @@
-import { NavLink } from 'react-router-dom';
 import '../../App.scss';
-
-import topstudios from '../images/topstudios.png'
-import wv from '../images/wandavision.png'
-import scoreGreen from '../images/score-green.png'
 
 import Chart from "chart.js/auto";
 

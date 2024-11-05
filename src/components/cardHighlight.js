@@ -1,10 +1,4 @@
-import { NavLink } from 'react-router-dom';
-// import data from './2019.json';
-// figure out the json stuff ......
-
 import '../App.scss';
-
-import scoreGreen from './images/score-green.png';
 import '../App.scss';
 
 export default function CardWV(props) {
@@ -20,6 +14,12 @@ export default function CardWV(props) {
 	// const poster = jsonWV['poster-src'];
 	// const text = jsonWV['text-preview'];
 
+	const birdColor = calculateColor(props.score);
+	console.log(birdColor);
+	console.log(typeof(birdColor));
+	
+
+
 
     return (
 		<div className="card-highlight">
@@ -29,8 +29,9 @@ export default function CardWV(props) {
 					<div className="flex-col gap-12 gray-primary-text">
 						<h1>{props.title}</h1>
 						<div>
-							<img src={scoreGreen} alt="soaring green bird" id="scoreGreen" width={300}></img>
-							<div className='scoreValue'>{props.score}</div>
+							<img src={require('./images/' + birdColor + '.png')} alt="soaring green bird" className='score-bird'></img>
+							<div className={'score-value ' + birdColor}>{props.score}</div>
+							{/* <div className='score-value score-green'>{props.score}</div> */}
 						</div>
 						{/* <div className='score'>
 							<div className='score-progress green'style={{width:250*props.percentile/100}}></div>
@@ -47,4 +48,17 @@ export default function CardWV(props) {
 		</div>
     )
 
+}
+
+function calculateColor(score) {
+	// returns the bird type 
+	if (score >= 50) {
+		return ['score-green']
+	} else if (score >= 40) {
+		return 'score-yellow'
+	} else if (score >= 30) {
+		return 'score-orange'
+	} else {
+		return 'score-red'
+	}
 }

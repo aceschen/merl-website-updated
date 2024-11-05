@@ -1,11 +1,6 @@
-import { NavLink } from 'react-router-dom';
 import '../../App.scss';
 
-import topstudios from '../images/topstudios.png'
-import wv from '../images/wandavision.png'
-import scoreGreen from '../images/score-green.png'
-
-export default function AtAGlance() {
+export default function Reviews() {
     return (
 		<div className='align-left section-header white reviews'>
 					<h1>Review #1</h1>

@@ -326,11 +326,11 @@ spoiler:hover {
 
 /* ~ Score */
 
-#scoreGreen {
+.score-bird {
   width: 178px;
 }
 
-.scoreValue {
+.score-value {
   position: absolute;
   display: flex;
   align-items: center; /** Y-axis align **/
@@ -339,7 +339,22 @@ spoiler:hover {
   font-family: "Karrik", sans-serif;
   font-size: 40px; 
   color: $color-white;
+}
+
+.score-green {
   margin: -98px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
+
+.score-yellow {
+  margin: -103px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
+
+.score-orange {
+  margin: -88px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
+
+.score-red {
+  margin: -105px 0 0 111px; // TODO: THIS IS HARDCODED LOL
 }
 
 .score {
@@ -359,14 +374,6 @@ spoiler:hover {
   position: absolute; 
   height: 50px; 
   border-radius: 12px 0 0 12px;
-}
-
-.score-value {
-  position: absolute;
-  font-family: "roc-grotesk", sans-serif;
-  font-size: 2em;
-  z-index: 1;
-  margin: 10px 0 0 12px;
 }
 
 .score-studio {

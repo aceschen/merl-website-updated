@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import Card from '../components/card';
+import CardHighlight from '../components/cardHighlight';
 import '../App.scss';
 
 import jsonData from '../data/2019.json';
@@ -42,23 +42,23 @@ export default function Search(props) {
 		  
 			<body>
 			
-				<div className='align-left'>
-					<h1>All Reviews</h1>
-					<input type='text' placeholder="Search film and TV" className='search-page-input margin-bottom-32'></input>
+			<div className='white'>
+				<div className="align-left section-header">
+					<h1>Latest Reviews</h1>
+				</div>
+				<div className='align-left collection'>
+					{cardData.map((item => (
+						<CardHighlight
+							title={item["title"]}
+							poster={item["poster"]}
+							score={item["score"]}
+							percentile={item["percentile"]}
+							text="150 character blurb here!!"
+						/>
+						)))}
 				</div>
 
-				<div className='flex-wrap gap-36 align-left'>
-					
-				{cardData.map((item => (
-					<Card
-						title={item["title"]}
-						poster={item["poster"]}
-						score={item["score"]}
-						percentile={item["percentile"]}
-						text="150 character blurb here!!"
-					/>
-				)))}
-				</div>
+			</div>
 
 				<Footer/>
 			</body>

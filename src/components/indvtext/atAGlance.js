@@ -1,8 +1,7 @@
-import { NavLink } from 'react-router-dom';
 import '../../App.scss';
 
-import topstudios from '../images/topstudios.png'
 import wv from '../images/wandavision.png'
+import scoreOrange from '../images/score-orange.png'
 import scoreGreen from '../images/score-green.png'
 
 export default function AtAGlance() {
@@ -18,8 +17,8 @@ export default function AtAGlance() {
 					<div style={{"width" : "661px"}} className='flex-col gap-24'>
 						<div className='flex-row gap-36'>
 							<div>
-								<img src={scoreGreen} alt="soaring green bird" id="scoreGreen" width={300}></img>
-								<div className='scoreValue'>58</div>
+								<img src={scoreGreen} alt="soaring green bird" className="score-bird" width={300}></img>
+								<div className='score-value scoreGreen'>58</div>
 							</div>
 							<div>
 								<h3 className='italic'>Characters and Cast: Score 24</h3>
