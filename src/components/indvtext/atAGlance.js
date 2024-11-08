@@ -18,7 +18,7 @@ export default function AtAGlance() {
 						<div className='flex-row gap-36'>
 							<div>
 								<img src={scoreGreen} alt="soaring green bird" className="score-bird" width={300}></img>
-								<div className='score-value scoreGreen'>58</div>
+								<div className='score-value score-green'>58</div>
 							</div>
 							<div>
 								<h3 className='italic'>Characters and Cast: Score 24</h3>
