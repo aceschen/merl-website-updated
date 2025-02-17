@@ -407,15 +407,31 @@ spoiler:hover {
   justify-self: center;
 }
 
+// #nav-search {
+//   width: 556px;
+//   font-family: "Karrik", sans-serif;
+//   font-size: 20px; 
+//   color: $color-black;
+//   border: solid 2px $color-pink;
+//   background-color: $color-gray-margin;
+//   border-radius: 24px;
+//   padding: 12px 0 12px 24px;
+//   justify-self: center;
+// }
+
 .search-page-input {
   font-family: "Karrik", sans-serif;
   font-size: 20px; 
   color: $color-gray-secondary;
   border: solid 2px $color-gray-secondary;
-  border-radius: 12px;
-  padding: 12px 16px 12px 8px;
+  border-radius: 24px;
+  padding: 12px 16px 12px 24px;
   justify-self: center;
-  width: 100%;
+  width: 90%;
+}
+
+.search-page-input:focus {
+  color: $color-black;
 }
 
 /*~ Buttons and Dots */

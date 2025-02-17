@@ -15,8 +15,8 @@ export default function CardWV(props) {
 	// const text = jsonWV['text-preview'];
 
 	const birdColor = calculateColor(props.score);
-	console.log(birdColor);
-	console.log(typeof(birdColor));
+	// console.log(birdColor);
+	// console.log(typeof(birdColor));
 	
 
 
