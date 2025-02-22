@@ -1,11 +1,12 @@
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import Card from '../components/card';
+import CardHighlight from '../components/cardHighlight';
 import '../App.scss';
 
 import jsonData from '../data/2019.json';
 import scores from '../data/2019-blurbs.json';
 import posters from '../data/imdb-posters.json';
+import { useState } from 'react';
 
 export default function Search(props) {
 
@@ -28,11 +29,51 @@ export default function Search(props) {
 
 	// cardData looks like... 
 	// [{title: "wanda", "score": x, "percentile": y}, {...}]
-	var cardData = []
+	var allCardData = []
 	titles.forEach(function(title) {
-		cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title], "poster": posters[title]})
+		allCardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title], "poster": posters[title]})
 	})
-	console.log("cardData", cardData);
+	// console.log("cardData", cardData);
+
+	// ** search filter tutorial from https://www.geeksforgeeks.org/how-to-implement-search-filter-functionality-in-reactjs/
+	// var titleList = [""];
+	// titleList = Array.from(titles);
+	// const [results, setResults] = useState(titleList);
+	// const [searchVal, setSearchVal] = useState("");
+	// function handleSearch() {
+	// 	console.log("searching");
+	// 	cardData = [];
+    //     if (searchVal === "") { setResults(titleList); return; }
+	// 	const filterBySearch = titleList.filter((title) => {
+    //         if (title.toLowerCase()
+    //             .includes(searchVal.toLowerCase())) { 
+	// 			cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title], "poster": posters[title]})
+	// 			console.log(cardData[0].title);
+	// 			return title; 
+	// 		}
+    //     })
+	// 	console.log(cardData);
+    //     setResults(filterBySearch);
+    // }
+
+	var searchTerm = ""
+	const [cardData, setCardData] = useState(allCardData);
+	const [searchVal, setSearchVal] = useState("");
+	function handleSearch() {
+		console.log("searching");
+		if (searchVal === "") { setCardData(allCardData); return; }
+		const filterBySearch = allCardData.filter((title) => {
+            if (title.title.toLowerCase()
+                .includes(searchVal.toLowerCase())) { 
+				cardData.push({"title": title, "score": merlscores2019[title], "percentile": merlpercentiles2019[title], "poster": posters[title]})
+				return title; 
+			}
+        })
+		console.log(cardData);
+		searchTerm = searchVal;
+        setCardData(filterBySearch);
+    }
+
 
     return (
 		<div className="App">
@@ -42,23 +83,44 @@ export default function Search(props) {
 		  
 			<body>
 			
-				<div className='align-left'>
-					<h1>All Reviews</h1>
-					<input type='text' placeholder="Search film and TV" className='search-page-input margin-bottom-32'></input>
+			<div className='white'>
+				<div className="align-left section-header flex-col gap-24">
+					<h1>Search Reviews</h1>
+					<div>
+						<input 					
+							className="search-page-input"
+							placeholder='Search movies and TV'
+							onChange={e => setSearchVal(e.target.value)} 
+							onKeyDown={(e) => {
+								if (e.key === 'Enter') {
+									handleSearch();
+								}
+							}}
+						>
+						</input>
+						{/* maybe add button */}
+						{/* <button onClick={handleSearch}>search</button> */}
+					</div>
+					<p>
+						{cardData.length} results
+					</p>
 				</div>
 
-				<div className='flex-wrap gap-36 align-left'>
-					
-				{cardData.map((item => (
-					<Card
-						title={item["title"]}
-						poster={item["poster"]}
-						score={item["score"]}
-						percentile={item["percentile"]}
-						text="150 character blurb here!!"
-					/>
-				)))}
+			
+			
+				<div className='align-left collection'>
+					{cardData.map((item => (
+						<CardHighlight
+							title={item["title"]}
+							poster={item["poster"]}
+							score={item["score"]}
+							percentile={item["percentile"]}
+							text="150 character blurb here!!"
+						/>
+						)))}
 				</div>
+
+			</div>
 
 				<Footer/>
 			</body>

@@ -1,13 +1,15 @@
-@import url('https://use.typekit.net/zni2vxh.css');
+@import url('https://use.typekit.net/bbj4vjx.css');
 
 /* ~ Colors and Fonts */
 
 $color-black: #242020;
-$color-gray-primary: #3F3F3F; 
+$color-gray-primary: #353535; 
 $color-gray-secondary: #969696;
+$color-gray-margin: #F3E7ED;
 $color-white: #FFFFFF;
 $color-pink: #f72585;
-$color-green: #268245;
+$color-pink-secondary: #FFCAE3;
+$color-green: #329554;
 $color-blue: #4361EE;
 $color-yellow: #FAB34A;
 $color-red: #892B2B;
@@ -30,6 +32,12 @@ $color-red: #892B2B;
 .yellow {
   background-color: $color-yellow;
 }
+.gray-primary {
+  background-color: $color-gray-primary;
+}
+.white {
+  background-color: $color-white;
+}
 
 .text-gray-primary {
   color: $color-gray-primary;
@@ -40,11 +48,9 @@ $color-red: #892B2B;
 .text-white {
   color: $color-white;
 }
-.text-red {
-  color: $color-red;
-}
-.text-blue {
-  color: $color-blue;
+
+.text-pink {
+  color: $color-pink;
 }
 
 
@@ -66,6 +72,7 @@ $color-red: #892B2B;
   text-align: center;
   margin: 0px auto;
   max-width: 1100px;
+  background-color: $color-white;
 }
 
 
@@ -87,8 +94,16 @@ $color-red: #892B2B;
   flex-wrap: wrap;
 }
 
+.gap-8 {
+  gap: 8px;
+}
+
 .gap-12 {
   gap: 12px;
+}
+
+.gap-24 {
+  gap: 24px;
 }
 
 .gap-36 {
@@ -105,6 +120,10 @@ $color-red: #892B2B;
 
 .gap-120 {
   gap: 120px;
+}
+
+.padding-bottom-48 {
+  padding-bottom: 48px;
 }
 
 .align-top {
@@ -124,32 +143,16 @@ $color-red: #892B2B;
   border-radius: 12px;
 }
 
-/* ~ Margins */
-
-.section-margin {
-  margin-bottom: 120px;
-}
-
-#footer-margin {
-  margin: 120px 160px;
-}
-
-.margin-4 {
-  margin-bottom: 4px;
-}
-
-.margin-bottom-32 {
-  margin-bottom: 32px;
-}
-
 
 /* ~ Typography */
 
 h1 {
-  font-family: "Karrik", sans-serif;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 600;
+  font-style: normal;
   font-size: 1.5em;
   color: $color-black;
-  font-weight: normal;
+  margin: 0;
 }
 
 h2 {
@@ -159,12 +162,21 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  font-family: "ff-real-text-pro", sans-serif; 
+  font-size: 1.25em; 
+  color: $color-gray-primary; 
+  font-weight: 400;
+  
+}
+
 p {
   font-family: "ff-real-text-pro", sans-serif;
   font-size: 1em; 
   font-weight: 300;
   line-height: 150%;
   margin: 0px;
+  display: inline-block;
 }
 
 .italic {
@@ -187,19 +199,56 @@ details:hover {
   cursor: pointer;
 }
 
+canvas {
+  width: 468px !important;
+  height: 468px !important;
+}
 
+spoiler {
+  color: $color-gray-margin;
+  background-color: $color-gray-margin;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+spoiler:hover {
+  color: $color-black;
+}
 
 /* ~ NavLinks */
 
-.navLink {
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-white;
+  background-color: $color-pink;
+  flex: 1;
   font-family: "Karrik", sans-serif;
-  font-size: 1.25em;
-  color: $color-black;
+  text-decoration: none;
+  height: 48px;
+}
+
+.navItem a {
+  color: $color-white;
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
   text-decoration: none;
 }
 
-.navLink:hover {
-  color: $color-pink;
+.navLink {
+  font-family: "Karrik", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background-color: $color-pink-secondary;
+  color: $color-black;
+}
+
+.navItem:hover a {
+  color: $color-black;
 }
 
 #view-collection {
@@ -220,7 +269,24 @@ details:hover {
 /* ~ Navigation Bar */
 
 #nav {
-  margin: 60px 0px;
+  padding: 24px 100px;
+  // gap: 36px;
+}
+
+#navLogo {
+  width: 258px;
+}
+
+#nav-search {
+  width: 556px;
+  font-family: "Karrik", sans-serif;
+  font-size: 20px; 
+  color: $color-black;
+  border: solid 2px $color-pink;
+  background-color: $color-gray-margin;
+  border-radius: 24px;
+  padding: 12px 0 12px 24px;
+  justify-self: center;
 }
 
 .nav-section {
@@ -233,15 +299,15 @@ details:hover {
 /* ~ Cards */
 
 .card-highlight {
-  width: 600px;
   text-align: left;
+  width: 468px;
+  // flex: 1 0 40%;
 }
 
 .card-highlight-image {
-  width: 187px;
-  height: 282px;
-  border-radius: 12px;
-  border: 2px solid $color-black;
+  width:137px;
+  border-radius: 6px;
+  // border: 2px solid $color-black;
 }
 
 .card-image {
@@ -259,6 +325,37 @@ details:hover {
 }
 
 /* ~ Score */
+
+.score-bird {
+  width: 178px;
+}
+
+.score-value {
+  position: absolute;
+  display: flex;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  text-align: center;
+  font-family: "Karrik", sans-serif;
+  font-size: 40px; 
+  color: $color-white;
+}
+
+.score-green {
+  margin: -98px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
+
+.score-yellow {
+  margin: -103px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
+
+.score-orange {
+  margin: -88px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
+
+.score-red {
+  margin: -105px 0 0 111px; // TODO: THIS IS HARDCODED LOL
+}
 
 .score {
   height: 52px;
@@ -279,44 +376,62 @@ details:hover {
   border-radius: 12px 0 0 12px;
 }
 
-.score-value {
-  position: absolute;
-  font-family: "roc-grotesk", sans-serif;
+.score-studio {
+  font-family: "Karrik", sans-serif;
   font-size: 2em;
-  z-index: 1;
-  margin: 10px 0 0 12px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding: 18px 12px 6px 12px; 
+  justify-content: center;
+  background: $color-green;
+  color: $color-white;
+  text-align: center;
 }
 
 /* ~ Inputs */
 
-.text-input {
-  font-family: "Karrik", sans-serif;
-  font-size: 20px; 
-  color: $color-gray-secondary;
-  border: solid 2px $color-gray-secondary;
-  border-radius: 12px;
-  padding: 12px 16px 12px 8px;
-  justify-self: center;
-  width: 240px;
-}
 
 .text-input:focus {
   color: $color-black;
 }
 
-#email-input {
-  width: 400px;
+.email-input {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 300;
+  font-size: 16px; 
+  color: $color-black;
+  border: solid 2px $color-gray-secondary;
+  border-radius: 24px;
+  padding: 12px 0 12px 24px;
+  justify-self: center;
 }
+
+// #nav-search {
+//   width: 556px;
+//   font-family: "Karrik", sans-serif;
+//   font-size: 20px; 
+//   color: $color-black;
+//   border: solid 2px $color-pink;
+//   background-color: $color-gray-margin;
+//   border-radius: 24px;
+//   padding: 12px 0 12px 24px;
+//   justify-self: center;
+// }
 
 .search-page-input {
   font-family: "Karrik", sans-serif;
   font-size: 20px; 
   color: $color-gray-secondary;
   border: solid 2px $color-gray-secondary;
-  border-radius: 12px;
-  padding: 12px 16px 12px 8px;
+  border-radius: 24px;
+  padding: 12px 16px 12px 24px;
   justify-self: center;
-  width: 100%;
+  width: 90%;
+}
+
+.search-page-input:focus {
+  color: $color-black;
 }
 
 /*~ Buttons and Dots */
@@ -362,3 +477,105 @@ details:hover {
   top: 100px;
 }
 
+/* ~ Articles */
+
+.collection {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0px 48px;
+  background-color: $color-white;
+}
+
+
+#articles div {
+  width: 477px;
+}
+
+#articles h1 {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#articles p {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+// new stuff .. sort and clean later ..... sorry future ace ... 
+
+.button {
+  // font-family: 'Karrik', sans-serif;
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 16px;
+  color: $color-white;
+  width: fit-content;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+.buttonRead:hover {
+  cursor: pointer;
+}
+
+.section-header {
+  padding: 48px;
+}
+
+#aboutCallout {
+  font-size: 46px;
+}
+
+#subscribe {
+  padding: 24px 48px;
+}
+
+.indvtext-lists li {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding: 12px;
+  color: $color-gray-primary;
+  list-style-type: '•';
+}
+
+.pos-reception {
+  list-style-type: '+' !important;
+}
+
+.neg-reception {
+  list-style-type: '-' !important;
+}
+
+.indvtext-lists actor {
+  color: $color-gray-secondary;
+  font-style: italic;
+}
+
+.reviews a {
+  color: $color-pink;
+}
+
+/* ~ Footer */
+
+#footer {
+  padding: 48px;
+}
+
+#footer h2 {
+  font-family: "roc-grotesk", sans-serif; 
+  font-size: 20px;
+  font-weight: 600;
+  margin: 4px 0;
+  // color: $color-pink;
+}
+
+#footer a {
+  font-family: "ff-real-text-pro", sans-serif;
+  font-size: 16px;
+  color: $color-gray-primary;
+  text-decoration: none;
+}
