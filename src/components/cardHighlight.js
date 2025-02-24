@@ -1,7 +1,7 @@
 import '../App.scss';
 import '../App.scss';
 
-export default function CardWV(props) {
+export default function CardHighlight(props) {
 
 	// NOTE: still missing the crow and some of the spacing feels bad
 
@@ -18,7 +18,12 @@ export default function CardWV(props) {
 	// console.log(birdColor);
 	// console.log(typeof(birdColor));
 	
-
+	// TODO: handle spaces and special characters
+	var textFolder = props.title; 
+	textFolder = textFolder.replace(/\s+/g, '-')
+		.replace(':', '_')
+		.replace('/', '_');
+	const path = "/reviews/" + textFolder;
 
 
     return (
@@ -41,7 +46,7 @@ export default function CardWV(props) {
 					</div>
 				</div>
 				<p>"{props.text}"</p>
-				<a href={"/wandavision"}><button className="button pink" to={"/"}>Read the review and score &gt;</button></a>
+				<a href={path}><button className="button pink" to={"/"}>Read the review and score &gt;</button></a>
 				
 
 			</div>

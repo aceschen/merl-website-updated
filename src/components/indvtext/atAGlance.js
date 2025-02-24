@@ -4,11 +4,11 @@ import wv from '../images/wandavision.png'
 import scoreOrange from '../images/score-orange.png'
 import scoreGreen from '../images/score-green.png'
 
-export default function AtAGlance() {
+export default function AtAGlance(props) {
     return (
 		<div className='align-left section-header white'>
 				<div className="flex-col">
-					<h1>WandaVision</h1>
+					<h1>{props.title}</h1>
 					<h3>TV Mini Series  • 2021 • TV-PG  • 5h 50m</h3>	
 				</div>	
 
