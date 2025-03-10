@@ -26,7 +26,7 @@ export default function Navbar() {
 					<NavLink to="/">Articles</NavLink>
 				</div>
 				<div className='navItem'>
-					<NavLink to="/">About MERL</NavLink>
+					<NavLink to="/about">About MERL</NavLink>
 				</div>
 				<div className='navItem'>
 					<NavLink to="/">TSB System</NavLink>
