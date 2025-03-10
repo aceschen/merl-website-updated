@@ -6,10 +6,13 @@ import scoreGreen from '../images/score-green.png'
 
 export default function AtAGlance(props) {
 
-	const ccScore = (props.reviewer1.totalCastAndCharacterQuantitativeScoreOutOf50SeeTheRubric
+	var ccScore = (props.reviewer1.totalCastAndCharacterQuantitativeScoreOutOf50SeeTheRubric
 					+ props.reviewer2.totalCastAndCharacterQuantitativeScoreOutOf50SeeTheRubric) / 2;
+	if (ccScore % 1 !== 0) ccScore += 0.5;
+	
 	const brScore = (props.reviewer1.totalBiasAndReceptionQualitativeScoreOutOf50MultiplyBy2
 					+ props.reviewer2.totalBiasAndReceptionQualitativeScoreOutOf50MultiplyBy2) / 2;
+	if (brScore % 1 !== 0) ccScore += 0.5;
 	// round these up or down 
 
 	const totalScore = ccScore + brScore;
@@ -40,7 +43,7 @@ export default function AtAGlance(props) {
 						<div className='flex-row gap-36'>
 							<div>
 								<img src={scoreGreen} alt="soaring green bird" className="score-bird" width={300}></img>
-								<div className='score-value score-green'>58*</div>
+								<div className='score-value score-green'>{totalScore}</div>
 							</div>
 							<div>
 								<h3 className='italic'>Characters and Cast Score: {ccScore}</h3>
