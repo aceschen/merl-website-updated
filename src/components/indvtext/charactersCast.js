@@ -51,7 +51,28 @@ export const options = {
 	
 }
 
-export default function CharactersCast() {
+export default function CharactersCast(props) {
+
+	const ccData = props.ccData;
+
+	var chars = [];
+	var actors = [];
+	console.log(ccData.length);
+	for (let i = 0; i < ccData.length; i++) {
+		// console.log(props[i].characterName + "hi")
+		if (!chars.includes(ccData[i].characterName)) {
+			chars.push(ccData[i].characterName);
+			actors.push(ccData[i].actorName);
+		}
+	}
+
+	// const listItems = chars.map(char => <li>{char}</li>);
+
+	var castcharlist = []
+	for (let i = 0; i < chars.length; i++) {
+		castcharlist.push(<li>{chars[i]} <actor>({actors[i]})</actor></li>);
+	}
+
     return (
 		<div className='align-left section-header white flex-col gap-24'>
 				<div className="flex-col">
@@ -64,13 +85,7 @@ export default function CharactersCast() {
 						options={options}
 					/>
 					<ul className='flex-col indvtext-lists'>
-						<li>Wanda Maximoff / Scarlet Witch <actor>(Elizabeth Olsen)</actor></li>
-						<li>Vision <actor>(Paul Bettany)</actor></li>
-						<li>Agatha Harkness <actor>(Kathryn Hahn)</actor></li>
-						<li>Monica Rambeau <actor>(Teyonah Parris)</actor></li>
-						<li>Jimmy Woo <actor>(Randall Park)</actor></li>
-						<li>Darcy Lewis <actor>(Kat Dennings)</actor></li>
-						<li>Ralph Bohner <actor>(Evan Peters)</actor></li>
+						{castcharlist}
 					</ul>
 				</div>
 		</div>
