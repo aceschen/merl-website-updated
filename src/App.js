@@ -7,7 +7,7 @@ import About from './pages/About';
 // import Courses from './pages/Courses';
 import './App.scss';
 import { Link } from 'react-router-dom';
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
 
            <Route path="/reviews/:title" element={<IndvText />} />
         </Routes>
+        <Analytics />
      </>
   );
  };
